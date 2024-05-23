@@ -1,5 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 40px;
+  background-color: rgb(99, 167, 141);
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  font-size: 24px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li:hover {
+  font-weight: 600;
+}
+
+.Platform {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.Counter {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.Counter p {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Counter span {
+  font-weight: 600;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
 button {
-  background-color: bisque;
-  border: 0px;
-  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  background-color: rgb(99, 167, 141);
+  outline: none;
+  border: 0;
+  border-radius: 40px;
 }

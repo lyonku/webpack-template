@@ -1,14 +1,26 @@
-import { useState } from "react";
 import "./App.css";
+import { Link, Outlet } from "react-router-dom";
 
 export const App = () => {
-  const [counter, setCounter] = useState(0);
-
   return (
-    <div>
-      <div>Счетчик: {counter}</div>
-      <button onClick={() => setCounter((prev) => prev - 1)}>-</button>
-      <button onClick={() => setCounter((prev) => prev + 1)}>+</button>
-    </div>
+    <>
+      <header>
+        <h1>Навигация</h1>
+        <nav>
+          <ul className="navigation">
+            <li>
+              <Link to="/">Главная</Link>
+            </li>
+            <li>
+              <Link to="/counter">Счетчик</Link>
+            </li>
+          </ul>
+        </nav>
+        <span className="Platform">PLATFORM: {__PLATFORM__}</span>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+    </>
   );
 };
